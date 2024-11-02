@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="4" master_id="0" name="Pre-Engagement" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730498679" ts_lastsave="1730498746">
+    <rich_text>Talk wit the client to define:
+		Scope
+		Testing Window
+		Contact Information
+		“Get out of jail free” card
+		Payment terms
+		</rich_text>
+  </node>
+</cherrytree>

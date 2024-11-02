@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="9" master_id="0" name="Post-Explotation" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730501229" ts_lastsave="1730504443">
+    <rich_text>During post-explotation, gather information about the attacked system, like interesting files, elevate our privileges.</rich_text>
+  </node>
+</cherrytree>

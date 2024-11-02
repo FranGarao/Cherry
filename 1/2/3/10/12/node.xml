@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="12" master_id="0" name="Executive Summary" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730501262" ts_lastsave="1730504943">
+    <rich_text>- </rich_text>
+    <rich_text weight="heavy">Background:</rich_text>
+    <rich_text> Description of the purpose of the test and definitions of any terms that may be unfamiliar to executives, such as vulnerability and countermeasure.
+- </rich_text>
+    <rich_text weight="heavy">Overall Posture:</rich_text>
+    <rich_text> Overview of the effectiveness of the test, the issues found, and a general issues that cause vulnerabilities, such as a lack of patch management.
+- </rich_text>
+    <rich_text weight="heavy">Risk profile: </rich_text>
+    <rich_text>overall rank of the organizations security posture compared to similar organizations whit measures such as high, moderate or low. Include an explanation of the ranking.
+- </rich_text>
+    <rich_text weight="heavy">General findings:</rich_text>
+    <rich_text> Synopsis of te issues identified along whit statiscs and metrics on the effectiveness of any contermeasures deployed.
+- </rich_text>
+    <rich_text weight="heavy">Recommendation summary:</rich_text>
+    <rich_text> a high-level overview of the tasks required to remediate the issues discovered in the pentest.
+- </rich_text>
+    <rich_text weight="heavy">Strategic Roadmap</rich_text>
+    <rich_text>: Short and long term goals to improve their security posture.</rich_text>
+  </node>
+</cherrytree>

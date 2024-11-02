@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="11" master_id="0" name="Technical Report" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730501255" ts_lastsave="1730505117">
+    <rich_text weight="heavy">Introduction</rich_text>
+    <rich_text>: inventory of details such as scope, contacts and so on.
+</rich_text>
+    <rich_text weight="heavy">Information</rich_text>
+    <rich_text> </rich_text>
+    <rich_text weight="heavy">gathering</rich_text>
+    <rich_text>: Details of findings
+</rich_text>
+    <rich_text weight="heavy">Vulnerability assesment</rich_text>
+    <rich_text>: Details of findings
+</rich_text>
+    <rich_text weight="heavy">Explotation/vulnerability verification</rich_text>
+    <rich_text>: Details of findings
+</rich_text>
+    <rich_text weight="heavy">Post explotation:</rich_text>
+    <rich_text> Quantitive description of the risk discovered.
+</rich_text>
+    <rich_text weight="heavy">Conclusion:</rich_text>
+    <rich_text> a final overview</rich_text>
+  </node>
+</cherrytree>

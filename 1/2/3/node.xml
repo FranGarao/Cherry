@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="3" master_id="0" name="Phases" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730498513" ts_lastsave="1730501287">
+    <rich_text>Stages of the Penetration Test: 
+Pre-Engagement
+Information-Gathering
+Threat-Modeling
+Vulnerability-Analysis
+Explotation Phase
+Post-Explotation
+Report Phase</rich_text>
+  </node>
+</cherrytree>
