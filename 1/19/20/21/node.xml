@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="21" master_id="0" name="SMB" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730765292" ts_lastsave="1730765512">
+    <rich_text weight="heavy">Main Node Name</rich_text>
+    <rich_text>: </rich_text>
+    <rich_text family="monospace">SMB (Server Message Block)</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h4">Subnodes and Content:</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text weight="heavy">Description</rich_text>
+    <rich_text>
+• ◇ </rich_text>
+    <rich_text weight="heavy">Protocol</rich_text>
+    <rich_text>: SMB (Server Message Block)
+• ◇ </rich_text>
+    <rich_text weight="heavy">Function</rich_text>
+    <rich_text>: Protocol primarily used on Windows networks for sharing files, printers, and other resources between devices on the same network. It is an application-layer protocol that facilitates data transfer and interaction between devices.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Ports</rich_text>
+    <rich_text>
+◇ ◇ </rich_text>
+    <rich_text weight="heavy">445</rich_text>
+    <rich_text>: Default port for direct SMB communication.
+◇ ◇ </rich_text>
+    <rich_text weight="heavy">137-139</rich_text>
+    <rich_text>: Used for NetBIOS over TCP/IP, previously used in older SMB versions.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Security</rich_text>
+    <rich_text>
+◇ ◇ </rich_text>
+    <rich_text weight="heavy">Data Encryption</rich_text>
+    <rich_text>: SMB by default does not encrypt data, but recent versions (e.g., </rich_text>
+    <rich_text weight="heavy">SMBv3</rich_text>
+    <rich_text>) support secure encryption and authentication.
+◇ ◇ </rich_text>
+    <rich_text weight="heavy">SMBv3</rich_text>
+    <rich_text>: Introduces AES encryption and other security improvements.
+◇ ◇ </rich_text>
+    <rich_text weight="heavy">Kerberos</rich_text>
+    <rich_text>: Provides secure authentication in Active Directory environments.
+◇ ◇ </rich_text>
+    <rich_text weight="heavy">NTLM</rich_text>
+    <rich_text>: Challenge-response-based authentication.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Services</rich_text>
+    <rich_text>
+◇ ◇ </rich_text>
+    <rich_text weight="heavy">Samba</rich_text>
+    <rich_text>: Compatibility with SMB on Linux/Unix systems for integration with Windows networks.
+◇ ◇ </rich_text>
+    <rich_text weight="heavy">SMB (Windows native)</rich_text>
+    <rich_text>: Built-in SMB service in Windows.
+◇ ◇ </rich_text>
+    <rich_text weight="heavy">CIFS (Common Internet File System)</rich_text>
+    <rich_text>: An older version of SMB, still used in certain environments.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Commands</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text weight="heavy">smbclient</rich_text>
+    <rich_text>: Connect to an SMB sharebash
+
+
+
+</rich_text>
+    <rich_text weight="heavy">net view</rich_text>
+    <rich_text>: View shared resources on a server
+
+
+</rich_text>
+    <rich_text weight="heavy">net use</rich_text>
+    <rich_text>: Map a network drive
+
+
+
+• </rich_text>
+    <rich_text weight="heavy">Notes</rich_text>
+    <rich_text>
+• ◇ </rich_text>
+    <rich_text weight="heavy">ADMIN$</rich_text>
+    <rich_text>: Administrative shares are hidden network shares on Windows that allow remote access to all disk volumes on a system connected to the network. These shares cannot be permanently deleted but can be disabled.
+• ◇ </rich_text>
+    <rich_text weight="heavy">C$</rich_text>
+    <rich_text>: Administrative share for the </rich_text>
+    <rich_text family="monospace">C:\</rich_text>
+    <rich_text> disk volume, where the operating system is hosted.
+• ◇ </rich_text>
+    <rich_text weight="heavy">IPC$</rich_text>
+    <rich_text>: Inter-process communication share used for inter-process communication through named pipes; not part of the file system.
+• ◇ </rich_text>
+    <rich_text weight="heavy">WorkShares</rich_text>
+    <rich_text>: Custom shares on the network.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Vulnerabilities</rich_text>
+    <rich_text>
+◇ ◇ </rich_text>
+    <rich_text weight="heavy">PsExec</rich_text>
+    <rich_text>: Vulnerable service enabling remote command execution.
+◇ ◇ </rich_text>
+    <rich_text weight="heavy">enum4linux</rich_text>
+    <rich_text>: Enumeration tool used to gather information about SMB shares.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Nmap Scripts</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text weight="heavy">smb-vuln-ms17-010</rich_text>
+    <rich_text>: Script for checking the MS17-010 vulnerability.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Metasploit Modules</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text weight="heavy">ms17_010_eternalblue</rich_text>
+    <rich_text>: Exploit module for the EternalBlue vulnerability (MS17-010).
+
+
+
+
+
+</rich_text>
+    <codebox char_offset="1185" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">smbclient //server/share
+</codebox>
+    <codebox char_offset="1232" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">net view \\server
+</codebox>
+    <codebox char_offset="1264" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">net use X: \\server\share
+</codebox>
+  </node>
+</cherrytree>

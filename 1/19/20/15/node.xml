@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="15" master_id="0" name="SNMP" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730759149" ts_lastsave="1730765252">
+    <rich_text>SIMPLE NETWORK MANAGER PROTOCOL
+
+1. </rich_text>
+    <rich_text weight="heavy">Protocol (Root Node)</rich_text>
+    <rich_text>• </rich_text>
+    <rich_text weight="heavy">Description</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Common Ports</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Versions</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Vulnerabilities</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Mitigations</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Tools</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">References</rich_text>
+    <rich_text>
+
+
+Each section can have a uniform format for easy reference and readability. Here's an example for </rich_text>
+    <rich_text weight="heavy">SNMP</rich_text>
+    <rich_text>.
+
+</rich_text>
+    <rich_text scale="h3">CherryTree Node Example for SNMP</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">Main Node Name</rich_text>
+    <rich_text>: </rich_text>
+    <rich_text family="monospace">SNMP (Simple Network Management Protocol)</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h4">Subnodes and Content:</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h5">1. Description</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text weight="heavy">Protocol</rich_text>
+    <rich_text>: SNMP
+◇ </rich_text>
+    <rich_text weight="heavy">Function</rich_text>
+    <rich_text>: Network management protocol used to monitor and manage network devices.
+◇ </rich_text>
+    <rich_text weight="heavy">Common Use</rich_text>
+    <rich_text>: Collects information about routers, switches, servers, printers, and other network devices.
+
+
+</rich_text>
+    <rich_text scale="h5">2. Common Ports</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text weight="heavy">UDP 161</rich_text>
+    <rich_text>: Standard listening port for SNMP.
+◇ </rich_text>
+    <rich_text weight="heavy">UDP 162</rich_text>
+    <rich_text>: Listening port for SNMP Traps.
+
+
+</rich_text>
+    <rich_text scale="h5">3. Versions</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text weight="heavy">SNMPv1</rich_text>
+    <rich_text>: Initial version, no security.
+◇ </rich_text>
+    <rich_text weight="heavy">SNMPv2c</rich_text>
+    <rich_text>: Improved performance, but lacks strong security.
+◇ </rich_text>
+    <rich_text weight="heavy">SNMPv3</rich_text>
+    <rich_text>: Provides authentication and encryption for secure communication.
+
+
+</rich_text>
+    <rich_text scale="h5">4. Vulnerabilities</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text weight="heavy">SNMPv1 and SNMPv2c</rich_text>
+    <rich_text>▪ </rich_text>
+    <rich_text weight="heavy">Description</rich_text>
+    <rich_text>: Lack of secure authentication; anyone with the community string can access data.
+▪ </rich_text>
+    <rich_text weight="heavy">Common Exploit</rich_text>
+    <rich_text>: Use of default community strings (e.g., </rich_text>
+    <rich_text family="monospace">public</rich_text>
+    <rich_text>) for unauthorized access.
+▪ </rich_text>
+    <rich_text weight="heavy">Impact</rich_text>
+    <rich_text>: Exposure of sensitive data, potential for misconfiguration or network tampering.
+
+
+◇ </rich_text>
+    <rich_text weight="heavy">SNMPv3</rich_text>
+    <rich_text>▪ </rich_text>
+    <rich_text weight="heavy">Vulnerability</rich_text>
+    <rich_text>: Weak authentication configurations can be exploited.
+▪ </rich_text>
+    <rich_text weight="heavy">Common Exploit</rich_text>
+    <rich_text>: Brute-force attacks against weak authentication.
+▪ </rich_text>
+    <rich_text weight="heavy">Impact</rich_text>
+    <rich_text>: Access to network configuration, potential unauthorized control.
+
+
+</rich_text>
+    <rich_text scale="h5">5. Mitigations</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text weight="heavy">Upgrade to SNMPv3</rich_text>
+    <rich_text>: Use the latest version, which provides authentication and encryption.
+◇ </rich_text>
+    <rich_text weight="heavy">Secure Community Strings</rich_text>
+    <rich_text>: Use non-default, strong community strings.
+◇ </rich_text>
+    <rich_text weight="heavy">IP Filtering</rich_text>
+    <rich_text>: Configure SNMP to accept requests only from trusted IP addresses.
+
+
+</rich_text>
+    <rich_text scale="h5">6. Tools</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text weight="heavy">Nmap</rich_text>
+    <rich_text>: </rich_text>
+    <rich_text family="monospace">nmap -sU -p 161 --script snmp-* &lt;IP&gt;</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text weight="heavy">SNMP-Check</rich_text>
+    <rich_text>: Specific tool for verifying configurations and potential vulnerabilities.
+◇ </rich_text>
+    <rich_text weight="heavy">Metasploit Framework</rich_text>
+    <rich_text>: Exploit modules available for SNMPv1 and v2.
+
+
+</rich_text>
+    <rich_text scale="h5">7. References</rich_text>
+    <rich_text>
+◇ SNMP Security Models
+◇ </rich_text>
+    <rich_text link="webs https://www.exploit-db.com/">Exploit Database SNMP</rich_text>
+    <rich_text>
+</rich_text>
+  </node>
+</cherrytree>

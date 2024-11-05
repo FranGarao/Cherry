@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="18" master_id="0" name="snmpwalk" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730763102" ts_lastsave="1730763699">
+    <rich_text>• </rich_text>
+    <rich_text weight="heavy">Description</rich_text>
+    <rich_text>
+• ◇ </rich_text>
+    <rich_text weight="heavy">Command</rich_text>
+    <rich_text>: </rich_text>
+    <rich_text family="monospace">snmpwalk</rich_text>
+    <rich_text>
+• ◇ </rich_text>
+    <rich_text weight="heavy">Function</rich_text>
+    <rich_text>: </rich_text>
+    <rich_text family="monospace">snmpwalk</rich_text>
+    <rich_text> is a command-line tool used to query SNMP-enabled devices. It retrieves information by walking through the SNMP tree structure and fetching details on system metrics, network interfaces, and device configuration.
+• ◇ </rich_text>
+    <rich_text weight="heavy">Common Use</rich_text>
+    <rich_text>: Typically used to gather comprehensive information from devices with SNMP enabled, such as routers, switches, and printers.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Basic Commands</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text weight="heavy">Basic Query</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+
+• • </rich_text>
+    <rich_text weight="heavy">Explanation</rich_text>
+    <rich_text>: Uses SNMP version 2c with the community string </rich_text>
+    <rich_text family="monospace">"public"</rich_text>
+    <rich_text> to query the SNMP device at </rich_text>
+    <rich_text family="monospace">&lt;IP&gt;</rich_text>
+    <rich_text>. Replace </rich_text>
+    <rich_text family="monospace">&lt;IP&gt;</rich_text>
+    <rich_text> with the target device's IP address.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Retrieve System Information</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+• • </rich_text>
+    <rich_text weight="heavy">Explanation</rich_text>
+    <rich_text>: Retrieves basic system information (OID: </rich_text>
+    <rich_text family="monospace">1.3.6.1.2.1.1</rich_text>
+    <rich_text>) such as system name, description, and uptime.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Get Network Interfaces</rich_text>
+    <rich_text>
+
+
+
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+
+• • ◇ </rich_text>
+    <rich_text weight="heavy">Explanation</rich_text>
+    <rich_text>: Queries the SNMP device for information on its network interfaces (OID: </rich_text>
+    <rich_text family="monospace">1.3.6.1.2.1.2</rich_text>
+    <rich_text>), including interface status, type, and physical addresses.
+
+
+
+
+• </rich_text>
+    <rich_text weight="heavy">Common Options</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text weight="heavy">Specify SNMP Version</rich_text>
+    <rich_text>: </rich_text>
+    <rich_text family="monospace">-v 1</rich_text>
+    <rich_text>, </rich_text>
+    <rich_text family="monospace">-v 2c</rich_text>
+    <rich_text>, </rich_text>
+    <rich_text family="monospace">-v 3</rich_text>
+    <rich_text> (choose version based on device compatibility).
+◇ </rich_text>
+    <rich_text weight="heavy">Community String</rich_text>
+    <rich_text>: </rich_text>
+    <rich_text family="monospace">-c &lt;community&gt;</rich_text>
+    <rich_text> (e.g., </rich_text>
+    <rich_text family="monospace">public</rich_text>
+    <rich_text>).
+◇ </rich_text>
+    <rich_text weight="heavy">OID</rich_text>
+    <rich_text>: Optional parameter to limit the output to a specific OID branch.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Examples</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text weight="heavy">Example 1</rich_text>
+    <rich_text>: Query for all available information
+
+
+
+• • ◇ </rich_text>
+    <rich_text weight="heavy">Explanation</rich_text>
+    <rich_text>: Retrieves the ARP table from the device at IP </rich_text>
+    <rich_text family="monospace">192.168.1.10</rich_text>
+    <rich_text>, listing IP and MAC address pairs.
+
+
+
+</rich_text>
+    <rich_text weight="heavy">Example 2</rich_text>
+    <rich_text>: Retrieve ARP table information
+
+
+• </rich_text>
+    <rich_text weight="heavy">Notes</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text family="monospace">snmpwalk</rich_text>
+    <rich_text> is often used for reconnaissance in network pentesting to identify and enumerate network devices.
+◇ </rich_text>
+    <rich_text weight="heavy">Security Consideration</rich_text>
+    <rich_text>: Ensure that only trusted IP addresses have access to SNMP-enabled devices, especially when using SNMPv1 and v2c, as they lack encryption.
+
+
+
+•TIPS: 
+
+if u get the users names, you can try bruteforce passwords with hydra demo.ine.local smb
+
+</rich_text>
+    <codebox char_offset="445" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">snmpwalk -v 2c -c public &lt;IP&gt;</codebox>
+    <codebox char_offset="638" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">snmpwalk -v 2c -c public &lt;IP&gt; 1.3.6.1.2.1.1
+</codebox>
+    <codebox char_offset="789" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">snmpwalk -v 2c -c public &lt;IP&gt; 1.3.6.1.2.1.2
+</codebox>
+    <codebox char_offset="1369" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">snmpwalk -v 2c -c private 192.168.1.10
+</codebox>
+    <codebox char_offset="1415" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">snmpwalk -v 2c -c public 192.168.1.10 1.3.6.1.2.1.4.22
+</codebox>
+    <codebox char_offset="1710" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">nmap -sU -p161 --script=snmp-* demo.ine.local &gt; snmp_info
+cat snmp_info</codebox>
+  </node>
+</cherrytree>
