@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="27" master_id="0" name="Basics" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730999214" ts_lastsave="1731006811">
+    <rich_text>
+</rich_text>
+    <rich_text scale="h3">Metasploit Framework Overview</rich_text>
+    <rich_text>
+Metasploit is a powerful penetration testing framework that simplifies the process of discovering, exploiting, and managing vulnerabilities. It provides an array of modules to facilitate various penetration testing tasks.
+
+</rich_text>
+    <rich_text scale="h4">Key Modules</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text weight="heavy">Auxiliary Modules</rich_text>
+    <rich_text>: Tools that assist in tasks such as scanning, fuzzing, or DoS (Denial of Service) attacks. They don’t provide shell access but are invaluable for gathering information and testing system stability.
+
+2. </rich_text>
+    <rich_text weight="heavy">Exploit Modules</rich_text>
+    <rich_text>: These contain code to exploit specific vulnerabilities in target systems, such as buffer overflows or SQL injections. Exploit modules are used to gain unauthorized access to systems.
+
+3. </rich_text>
+    <rich_text weight="heavy">Payload Modules</rich_text>
+    <rich_text>: Payloads are the code delivered to the target after a vulnerability has been exploited. They provide the means to execute commands, start reverse shells, or maintain persistent access.
+
+4. </rich_text>
+    <rich_text weight="heavy">Post-Exploitation Modules</rich_text>
+    <rich_text>: These are used after initial access to gather further information, escalate privileges, or pivot to other network targets.
+
+5. </rich_text>
+    <rich_text weight="heavy">Encoders</rich_text>
+    <rich_text>: Help obfuscate payloads to bypass detection mechanisms like antivirus software. They don't encrypt payloads but modify the code structure to evade basic signature detection.
+
+6. </rich_text>
+    <rich_text weight="heavy">NOP Generators</rich_text>
+    <rich_text>: These are simple modules to create "no-operation" instructions, often used to align memory addresses for exploits.
+
+
+</rich_text>
+    <rich_text scale="h3">Payload Types</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Staged Payloads</rich_text>
+    <rich_text>: Divided into two parts: a small stager that connects back to the attacker’s machine and downloads the larger stage payload. Staged payloads save space but rely on successful network communication.
+
+• </rich_text>
+    <rich_text weight="heavy">Non-Staged Payloads</rich_text>
+    <rich_text>: Delivered in a single step. These do not rely on additional network communication, making them more reliable but larger in size.
+
+
+
+</rich_text>
+    <rich_text scale="h4">Stage and Stager</rich_text>
+    <rich_text>
+◇ </rich_text>
+    <rich_text weight="heavy">Stager</rich_text>
+    <rich_text>: The initial, smaller payload responsible for establishing a connection back to the attacker, preparing the way for the larger stage.
+
+◇ </rich_text>
+    <rich_text weight="heavy">Stage</rich_text>
+    <rich_text>: The main payload that delivers functionality, such as Meterpreter, once the stager has successfully connected back.
+
+
+
+</rich_text>
+    <rich_text scale="h3">Meterpreter Payload</rich_text>
+    <rich_text>
+Meterpreter (short for </rich_text>
+    <rich_text style="italic">Meta-Interpreter</rich_text>
+    <rich_text>) is an advanced, flexible payload within Metasploit. Once deployed, Meterpreter operates solely in memory, making it difficult to detect. It provides several powerful features:
+◇ </rich_text>
+    <rich_text weight="heavy">In-memory Execution</rich_text>
+    <rich_text>: Reduces detection by running solely in memory and avoiding disk writes.
+
+◇ </rich_text>
+    <rich_text weight="heavy">Command Modules</rich_text>
+    <rich_text>: Allows execution of post-exploitation commands, such as gathering system information, capturing screenshots, recording keystrokes, and accessing the file system.
+
+◇ </rich_text>
+    <rich_text weight="heavy">Session Migration</rich_text>
+    <rich_text>: Facilitates moving the Meterpreter session to a different process on the target machine, often for persistence or stealth purposes.
+
+◇ </rich_text>
+    <rich_text weight="heavy">Network Pivoting</rich_text>
+    <rich_text>: Enables tunneling network traffic through the compromised host, useful for accessing internal network resources.
+
+
+INSTALLATION
+sudo apt-get update &amp;&amp; sudo apt-get install metasploit-framework -y
+sudo systemctl enable postgresql 
+sudo systemctl start postgresql
+sudo systemctl status postgresql
+sudo msfdb 
+sudo msfdb init
+sudo msfdb reinit 
+sudo msfdb status
+msfconsole 
+# :D
+</rich_text>
+  </node>
+</cherrytree>

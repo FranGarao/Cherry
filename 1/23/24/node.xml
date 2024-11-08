@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="24" master_id="0" name="Metasploit Framework" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730998841" ts_lastsave="1731009114">
+    <rich_text>East0to0use all in one interface thath provides you with acces to all the functionality of the msf
+
+what u need to know? 
+	search modules and payloads
+	select modules
+	configure module options and variables
+	managing sessions
+	additional functionality
+	saving ur configuration
+
+commands: 
+	search (type, platform
+	connect (similar to netcat)</rich_text>
+  </node>
+</cherrytree>

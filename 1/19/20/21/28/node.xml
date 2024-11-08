@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="28" master_id="0" name="smbclient" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1731019174" ts_lastsave="1731019176">
+    <rich_text>smbclient -L \\\\&lt;IP&gt;\\ -U admin
+smbclient \\\\&lt;IP&gt;\\dir -U admin
+</rich_text>
+  </node>
+</cherrytree>
