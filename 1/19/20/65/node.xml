@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="65" master_id="0" name="NTP" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730895733" ts_lastsave="1730896006">
+    <rich_text>### **NTP (Network Time Protocol)**
+
+- **Descripción**: Protocolo utilizado para sincronizar la hora entre dispositivos en una red.
+    
+- **Puertos**:
+    - **123** por defecto (UDP).
+    
+- **Seguridad**: NTP no cifra las comunicaciones. Versiones más recientes soportan autenticación, pero aún pueden ser vulnerables a ciertos ataques (como NTP amplification).
+
+- **Servicios**:
+    - **ntpd (NTP daemon)**
+    - **Chrony**
+    
+- **Comandos**:
+```
+ntpdate -q pool.ntp.org
+timedatectl status
+```</rich_text>
+  </node>
+</cherrytree>

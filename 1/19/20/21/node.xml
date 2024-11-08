@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
-  <node unique_id="21" master_id="0" name="SMB" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730765292" ts_lastsave="1730765512">
+  <node unique_id="21" master_id="0" name="SMB" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730765292" ts_lastsave="1730892993">
     <rich_text weight="heavy">Main Node Name</rich_text>
     <rich_text>: </rich_text>
     <rich_text family="monospace">SMB (Server Message Block)</rich_text>
@@ -71,17 +71,23 @@
     <rich_text weight="heavy">smbclient</rich_text>
     <rich_text>: Connect to an SMB sharebash
 
-
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
 
 </rich_text>
     <rich_text weight="heavy">net view</rich_text>
     <rich_text>: View shared resources on a server
-
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
 
 </rich_text>
     <rich_text weight="heavy">net use</rich_text>
     <rich_text>: Map a network drive
-
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
 
 
 • </rich_text>
@@ -130,10 +136,24 @@
     <rich_text>: Exploit module for the EternalBlue vulnerability (MS17-010).
 
 
-
-
-
-</rich_text>
+-Tools
+	</rich_text>
+    <rich_text family="monospace">nmblookup </rich_text>
+    <rich_text>
+	smbclient
+	</rich_text>
+    <rich_text weight="heavy">PsExec</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text weight="heavy">enum4linux</rich_text>
+    <rich_text>
+	</rich_text>
+    <rich_text family="monospace">rpcclient -U "" -N demo.ine.local</rich_text>
+    <rich_text>
+	
+Questions
+ What is the NetBIOS computer name of samba server?
+ Using smbclient determine whether anonymous connection (null session) is allowed on the samba server or not. HOW?</rich_text>
     <codebox char_offset="1185" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">smbclient //server/share
 </codebox>
     <codebox char_offset="1232" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">net view \\server

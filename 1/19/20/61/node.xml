@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="61" master_id="0" name="IMAP" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730895708" ts_lastsave="1730895994">
+    <rich_text>### **IMAP (Internet Message Access Protocol)**
+
+- **Descripción**: Protocolo utilizado para acceder a correos electrónicos almacenados en un servidor desde clientes locales.
+    
+- **Puertos**:
+    - **143** por defecto.
+    - **993** para IMAPS (IMAP sobre SSL/TLS).
+    
+- **Seguridad**: IMAP no cifra los datos por defecto. Para asegurar la transmisión:
+    - **IMAPS**: Usa SSL/TLS para cifrar el acceso al correo.
+
+- **Servicios**:
+    - **Dovecot**
+    - **Cyrus IMAP**
+    - **Zimbra**
+    
+- **Comandos**:
+```
+telnet imap.example.com 143
+openssl s_client -connect imap.example.com:993
+```</rich_text>
+  </node>
+</cherrytree>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="54" master_id="0" name="SAMBA" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730895527" ts_lastsave="1730895527">
+    <rich_text>```
+ 
+```
+
+enum4linux -a `10.10.11.11` - overview of samba target
+
+</rich_text>
+    <codebox char_offset="0" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">
+smbmap -H 10.10.10.10 -u admin -p password1
+</codebox>
+    <codebox char_offset="7" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">
+#comandos utiles de smbclient
+-U -L //192.122.32.2/franchu -U admin
+</codebox>
+  </node>
+</cherrytree>

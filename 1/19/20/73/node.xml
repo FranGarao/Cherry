@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="73" master_id="0" name="SSH" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730895933" ts_lastsave="1730896068">
+    <rich_text>(Secure Shell)
+
+- **Descripción**: Protocolo para acceder de manera segura a dispositivos remotos mediante una conexión cifrada, utilizado para la administración remota de servidores.
+    
+- **Puertos**:
+    - **22** por defecto.
+    
+- **Seguridad**: SSH cifra todo el tráfico, incluidas las credenciales, lo que lo hace muy seguro para la administración remota.
+
+- **Servicios**:
+    - **OpenSSH**
+    - **Dropbear**
+    - **PuTTY** (cliente)
+    
+- **Comandos**:
+```
+ssh user@hostname
+ssh -p 22 user@hostname
+```</rich_text>
+  </node>
+</cherrytree>

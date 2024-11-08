@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="68" master_id="0" name="RDP" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730895775" ts_lastsave="1730896015">
+    <rich_text>### **RDP (Remote Desktop Protocol)**
+
+- **Descripción**: Protocolo de red que permite a los usuarios conectarse de forma remota a una computadora con Windows, proporcionándoles acceso a su escritorio y aplicaciones como si estuvieran físicamente frente a la máquina.
+    
+- **Puertos**:
+    - **3389**: Puerto por defecto para conexiones RDP.
+
+- **Seguridad**:
+    - **CredSSP**: Cifrado de las credenciales durante el inicio de sesión.
+    - **RDP sobre TLS**: Implementación que permite asegurar las conexiones RDP mediante cifrado TLS.
+    - **VPN**: Se recomienda utilizar una VPN para encapsular y asegurar las conexiones RDP.
+
+- **Servicios**:
+    - **Remote Desktop Services (RDS)** en Windows.
+
+- Tools:
+```
+mstsc /v:hostname
+rdesktop hostname
+xfreerdp
+BlueKeep
+```
+
+- Vulns:
+	 1. CVE-2019-0708 (WindowsXP, Vista, 7, 2008 &amp; R2)
+	 2. </rich_text>
+  </node>
+</cherrytree>

