@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
-<<<<<<< HEAD
   <node unique_id="21" master_id="0" name="SMB" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730765292" ts_lastsave="1731019174">
-=======
-  <node unique_id="21" master_id="0" name="SMB" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730765292" ts_lastsave="1730892993">
->>>>>>> e534095eca857fbf243cfc9fab0a9dded46680e4
     <rich_text weight="heavy">Main Node Name</rich_text>
     <rich_text>: </rich_text>
     <rich_text family="monospace">SMB (Server Message Block)</rich_text>
