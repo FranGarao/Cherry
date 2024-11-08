@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="53" master_id="0" name="Kernel" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730895518" ts_lastsave="1730895520">
+    <rich_text>Tool (whit meterpreter o rs):
+</rich_text>
+    <rich_text link="webs https://github.com/mzet-/linux-exploit-suggester(Ubuntu">https://github.com/mzet-/linux-exploit-suggester(Ubuntu</rich_text>
+    <rich_text> 12.04) 
+**IMPORTANT AFTER EXPLOIT**
+- Kernel Version: 
+- Architecture:
+- Distribution: 
+- Distribution Version: 
+This exploits shows all te vulnerabilities of the `Linux Distribution`
+</rich_text>
+  </node>
+</cherrytree>

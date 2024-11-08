@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="74" master_id="0" name="TELNET" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730895941" ts_lastsave="1730896070">
+    <rich_text>### **Telnet**
+
+- **Descripción**: Protocolo de red que permite la administración remota de dispositivos, pero **sin cifrado**, lo que lo hace inseguro para entornos modernos.
+    
+- **Puertos**:
+    - **23** por defecto.
+    
+- **Seguridad**: Telnet no cifra los datos, incluidas las credenciales, por lo que es vulnerable a la interceptación. Se recomienda usar **SSH** en lugar de Telnet.
+
+- **Servicios**:
+    - **inetd (en sistemas Unix)**
+    - **xinetd**
+
+- **Comandos**:
+```
+telnet hostname
+telnet hostname 23
+```</rich_text>
+  </node>
+</cherrytree>

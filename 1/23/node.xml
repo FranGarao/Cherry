@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
+<<<<<<< HEAD
   <node unique_id="23" master_id="0" name="Tools" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="239" is_bold="0" foreground="" ts_creation="1730998834" ts_lastsave="1730998888"/>
+=======
+  <node unique_id="23" master_id="0" name="MSF" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="101" is_bold="0" foreground="" ts_creation="1730887332" ts_lastsave="1730887353">
+    <rich_text>nmap -oX to save .xml to import to msf</rich_text>
+  </node>
+>>>>>>> e534095eca857fbf243cfc9fab0a9dded46680e4
 </cherrytree>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="33" master_id="0" name="Apache" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730893917" ts_lastsave="1730893922">
+    <rich_text>• auxiliary/scanner/http/apache_userdir_enum
+• auxiliary/scanner/http/brute_dirs
+• auxiliary/scanner/http/dir_scanner
+• auxiliary/scanner/http/dir_listing
+• auxiliary/scanner/http/http_put
+• auxiliary/scanner/http/files_dir
+• auxiliary/scanner/http/http_login
+• auxiliary/scanner/http/http_header
+• auxiliary/scanner/http/http_version
+• auxiliary/scanner/http/robots_txt</rich_text>
+  </node>
+</cherrytree>

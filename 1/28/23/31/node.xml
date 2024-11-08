@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="31" master_id="0" name="FTP" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730892346" ts_lastsave="1730893957">
+    <rich_text family="monospace">auxiliary/scanner/ftp/ftp_version</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text family="monospace">auxiliary/scanner/ftp/ftp_login</rich_text>
+  </node>
+</cherrytree>

